@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <center><h1 style="color: aquamarine;">HEADER 1</h1></center>
+        <H2 style="background-color: rgb(138, 138, 224);">HEADER 2</H2>
+        <P style="color: blueviolet;font-size: larger;">Some random text to practice.</P>
+        <p style="color: brown;">This is a <i> bit</i> more.</p>
+        <p><a href="https://www.theguardian.com/uk" target="_blank"> Guardian Online <i style="color: blue;" >go to site</i></a></p>
+        <p> This is a link to <a href="https://www.google.com/">Google</a></p>
+        <p><a href="https://i.guim.co.uk/img/media/8f4dbd6b5b77ad1d5c725f10e83ba36c97359769/0_0_2560_1536/master/2560.jpg?width=620&quality=45&dpr=2&s=none" 
+        target="_blank"> Techscape AI article image <i style="color: blue;"> go to site</i></a></p>
+        </main>
+    <!-- Check the correct use of div -->
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QRYfUnX9Pm0" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+    
+    <p><img src="/Images/testpicmixer.jpg" alt="Audio mixer" style="width: 640px; height: 427px;">
+        <!-- does below need to be in paragrph? -->
+    <img src="/Images/headphones club.jpg" alt="Person wearing headphones in a club" width="640px" height="427px"></p> 
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2202.9712345004573!2d-2.960420048516477!3d56.48548238066119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48865d0313c85135%3A0x8fd3d5527c9c7544!2sWedding%20Events%20%40%20Mains%20Castle%20Dundee!5e0!3m2!1sen!2suk!4v1679414725535!5m2!1sen!2suk" 
+    width="600" height="450" style="border:0;" allowfullscreen="" 
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Testing how to make comments -->
+<p><iframe src="/iFrame/Constitution - Buckinghamshire Bowls Association Issue 7.4 2017.pdf" 
+    width="600" height="450" frameborder="2"></iframe></p>
+
+<!-- entities practice -->
+
+<h2>entities</h2>
+
+<p>Fiance&#769;e</p>
+<p>&#163;100</p>
+<p>More &#38; more.</p>
+<p>Blah&#169;</p>
+
+<!-- tables practice-->
+
+<h2>tables</h2>
+
+<h4>Numbers</h4>
+<table style="margin: 80px; border: 5px;">
+    <tr>
+        <th>One</th>
+        <th>Two</th>
+        <th>Three</th>
+    </tr>
+    <tr>
+        <td style="padding: 80px;">1</td>
+        <td style="padding: 80px;">2</td>
+        <td style="padding: 80px;">3</td>
+    </tr>
+</table>
+<!-- Lists practice -->
+
+<h2>lists</h2>
+
+<h3>unordered list</h3>
+
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+
+<h3>ordered list</h3>
+
+<ol>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ol>
+
+<!-- forms practice -->
+
+<h2>forms</h2>
+
+<form action="">
+    <label for="Fname">First Name</label><br>
+    <input type="text" id="Fname" name="Fname" placeholder="First Name" minlength="2" maxlength="50" required>
+    
+    <label for="Sname">Surname</label>
+    <input type="text" id="Sname" name="Sname" placeholder="Surname" minlength="2" maxlength="50" required>
+    <br>
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" placeholder="email" minlength="7" maxlength="50" required>
+    <br>
+    <label for="Bday">D.O.B.</label>
+    <input type="date" id="Bday" name="Bday">
+    <br>
+    <br>
+    <input type="submit" id="submit" value="submit">
+    <br>
+    <br>
+    <input type="reset" value="reset">
+</form>
+
+    <!-- select option practice -->
+    <br><br><br><br>
+
+<h2>select option</h2>
+
+    <label for="music">Genre of music</label>
+<select name="Genres" id="Genres">
+
+    <option value="default">select an option</option>
+    <option value="Pop">Pop</option>
+    <option value="Rock">Rock</option>
+    <option value="Dance">Dance</option>
+    <option value="RnB">RnB</option>
+    <option value="World">World</option>
+</select>
+<br><br><br>
+
+
+<!-- radio button practice -->
+
+<h2>radio button</h2>
+
+<input type="radio" id="Pop" name="Genre" value="Pop">
+<label for="Pop">Pop</label><br>
+<input type="radio" id="Rock" name="Genre" value="Rock">
+<label for="Rock">Rock</label><br>
+<input type="radio" id="Dance" name="Genre" value="Dance">
+<label for="Dance">Dance</label><br>
+<input type="radio" id="RnB" name="Genre" value="RnB">
+<label for="RnB">RnB</label><br>
+<input type="radio" id="World" name="Genre" value="World">
+<label for="World">World</label>
+<br>
+<br>
+<br>
+
+<!-- checkbox practice -->
+
+<h2>checkbox</h2>
+
+<input type="checkbox" id="Pop" name="Genres" value="Pop">
+<label for="Pop">Pop</label><br>
+<input type="checkbox" id="Rock" name="Genres" value="Rock">
+<label for="Rock">Rock</label><br>
+<input type="checkbox" id="Dance" name="Genres" value="Dance">
+<label for="Dance">Dance</label><br>
+<input type="checkbox" id="RnB" name="Genres" value="RnB">
+<label for="RnB">RnB</label><br>
+<input type="checkbox" id="World" name="Genres" value="World">
+<label for="World">World</label>
+<br>
+<br>
+<br>
+
+<!-- data list practice -->
+<!-- fieldset and legend practice -->
+
+<h2>data list</h2>
+
+
+<form style="margin: 100px; width: 100px;">
+
+<fieldset>
+
+    <legend>Favorite Genre</legend>
+
+<label for="style">Choose your favourite style of music</label>
+<input list="genre" name="music" id="style" required>
+
+<datalist id="genre">
+    <option value="pop">
+    <option value="rock">
+    <option value="dance">
+    <option value="RnB">
+    <option value="world">
+    <option value="jazz">
+    <option value="classical">
+    <option value="house">
+    <option value="country">
+    <option value="indie rock">
+    <option value="drum and bass">
+    <option value="metal">
+    <option value="techno">
+    <option value="electronic">
+</datalist>
+</fieldset>
+</form>
+
+<!-- menu assignment -->
+<fieldset>
+<form style="margin: 100px; width: 500px;">
+    <fieldset>
+        <h1>CHICKEN MENU</h1>
+    </fieldset>
+
+    <fieldset>
+        <legend>Choose Spice</legend>
+
+        <input type="radio" id="Extra Hot" name="spice" value="Extra Hot">
+        <label for="Extra Hot">Extra Hot</label><br>
+        <input type="radio" id="Hot" name="spice" value="Hot">
+        <label for="Hot">Hot</label><br>
+        <input type="radio" id="Regular" name="spice" value="Regular">
+        <label for="Regular">Regular</label><br>
+        <input type="radio" id="Mild" name="spice" value="Mild">
+        <label for="Mild">Mild</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sides</legend>
+
+        <input type="checkbox" id="Fries" name="sides" value="Fries">
+        <label for="Fries">Fries</label><br>
+        <input type="checkbox" id="Wedges" name="sides" value="Wedges">
+        <label for="Wedges">Wedges</label><br>
+        <input type="checkbox" id="Salad" name="sides" value="Salad">
+        <label for="Salad">Salad</label><br>
+        <input type="checkbox" id="Rice" name="sides" value="Rice">
+        <label for="Rice">Rice</label><br>
+        <input type="checkbox" id="Mash" name="sides" value="Mash">
+        <label for="Mash">Mash</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Drinks</legend>
+
+        <input type="checkbox" id="Cola" name="drink" value="Cola">
+        <label for="Cola">Cola</label><br>
+        <input type="checkbox" id="Lemonade" name="drink" value="Lemonade">
+        <label for="Lemonade">Lemonade</label><br>
+        <input type="checkbox" id="Orange" name="drink" value="Orange">
+        <label for="Orange">Orange</label><br>
+        <input type="checkbox" id="Water" name="drink" value="Water">
+        <label for="Water">Water</label><br>
+        <input type="checkbox" id="Fresh Orange" name="drink" value="Fresh Orange">
+        <label for="Fresh Orange">Fresh Orange</label>
+    </fieldset>
+
+    <fieldset>
+        <label for="allergies">Do you have any allergies?</label>
+        <input list="allergy" name="food allergy" id="allergies">
+        <datalist id="allergy">
+            <option value="Nuts"></option>
+        </datalist>
+    </fieldset>
+
+</form>
+</fieldset>
+
+</fieldset>
+
+</form>
+
+</body>
+
+</html>
