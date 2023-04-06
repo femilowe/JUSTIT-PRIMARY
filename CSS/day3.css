@@ -1,0 +1,38 @@
+body {background-color: aqua;}
+
+#img-header {height: 100px;}
+
+header {background-color: blue; position: absolute; top: 0; right: 0; left: 0;}
+
+h1 {display: inline; font-size: 65px; margin-left: 35%;}
+
+nav {font-size: 20px; margin-left: 37%;}
+
+a {color: rgb(255, 252, 252); margin: 5%;}
+
+a:hover {color: brown;}
+
+#float-menu {background-color: chartreuse;
+display: inline-block;}
+
+#float-btn {position: fixed; 
+            background-color: rgb(255, 0, 0); 
+            margin-left: 0%;
+            padding: 0.5%;
+            border-radius: 10%;
+            opacity: calc(40%);
+            right: 0;
+            display: block;}
+
+#float-btn a {display: block; padding:10%;}
+
+
+
+.products {list-style-type: none;}
+           
+.product {display: inline-block; 
+          background-color: blue;
+          color: red;
+          margin: 0px 6px; 
+          height: 250px;
+          width: 65px;}

@@ -1,0 +1,45 @@
+
+:root{ 
+
+    --h1font: 'Pacifico', cursive;
+    --hfont: 'Merriweather', serif;
+    --pfont: 'PT Sans', sans-serif;
+
+    --black: black;
+    --white: white;
+    --red: red;
+    --green: #7ea172d4;
+    --yellow: #f2af2918;
+    --blue:  aqua;
+
+    --shadow: 5px 5px 5px black;
+
+
+} 
+
+
+
+
+body {background: linear-gradient(to bottom, var(--red), var(--white)); 
+    background-size: cover;}
+
+/*header backround image + font + border
+*/
+header {  
+    position: sticky;
+    background-color: var(--red);
+    height: 170px;
+    z-index: 1;
+    }
+
+
+#headpic{}
+
+h1 {font-family: var(--h1font);
+    font-size: 65px; 
+    color: var(--white); 
+    display: inline; 
+    margin-left: 10%;
+    }
+
+h1{text-shadow: var(--shadow);}

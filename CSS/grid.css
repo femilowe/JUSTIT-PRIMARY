@@ -1,0 +1,39 @@
+
+
+.item-1{grid-area: header;
+        background-color: aqua;}
+
+.item-2{grid-area: section1;
+        background-color: blueviolet;}
+        
+.item-3{grid-area: section2;
+        background-color: blue;}        
+
+.item-4{grid-area: section3;
+        background-color: green;}   
+        
+.item-5{grid-area: footer;
+        background-color: red;}
+
+.grid{
+    display: grid;
+
+    grid-template-areas: 
+    'header header header header header' 
+    'section1 . section2 . section3'
+    'footer footer footer footer footer';
+
+    gap: 1% 1%;
+
+    grid-template-columns: 30% 5% 30% 5% 30%;
+
+    grid-template-rows: 10% 80% 10%;
+
+    height: 1000px;
+
+    background-image: url(/Images/testpicmixer.jpg);
+    background-size: cover;
+    
+    
+}
+

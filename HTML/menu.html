@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu assignment</title>
+
+
+
+</head>
+<body>
+    <!-- menu assignment -->
+<form>    
+    <fieldset style="background-image: url(/Images/barbecue-1836053_1920.jpg); background-size: cover; border-color: yellow; border-width: 10px;">
+    
+        
+            <center><h1 id="h1">CHICKEN MENU</h1></center>
+        
+    
+        <fieldset class="section">
+            <legend>Choose Spice &#127831</legend>
+    
+            <input type="radio" id="Extra Hot" name="spice" value="Extra Hot">
+            <label for="Extra Hot" id="xhot">Extra Hot &#128293&#128293&#128293</label><br>
+            <input type="radio" id="Hot" name="spice" value="Hot">
+            <label for="Hot" style="color: red">Hot &#128293;&#128293</label><br>
+            <input type="radio" id="Regular" name="spice" value="Regular">
+            <label for="Regular">Regular &#128293</label><br>
+            <input type="radio" id="Mild" name="spice" value="Mild">
+            <label for="Mild" style="color: rgb(25, 169, 0);">Mild</label><br>
+            
+        </fieldset>
+    
+        <fieldset style="font-size: x-large; color: yellow;">
+            <legend>Sides &#127839</legend>
+    
+            <input type="checkbox" id="Fries" name="sides" value="Fries">
+            <label for="Fries">Fries</label><br>
+            <input type="checkbox" id="Wedges" name="sides" value="Wedges">
+            <label for="Wedges">Wedges</label><br>
+            <input type="checkbox" id="Salad" name="sides" value="Salad">
+            <label for="Salad">Salad</label><br>
+            <input type="checkbox" id="Rice" name="sides" value="Rice">
+            <label for="Rice">Rice</label><br>
+            <input type="checkbox" id="Mash" name="sides" value="Mash">
+            <label for="Mash">Mash</label>
+        </fieldset>
+    
+        <fieldset style="font-size: x-large; color: yellow;">
+            <legend>Drinks &#129380</legend>
+    
+            <input type="checkbox" id="Cola" name="drink" value="Cola">
+            <label for="Cola">Cola</label><br>
+            <input type="checkbox" id="Lemonade" name="drink" value="Lemonade">
+            <label for="Lemonade">Lemonade</label><br>
+            <input type="checkbox" id="Orange" name="drink" value="Orange">
+            <label for="Orange">Orange</label><br>
+            <input type="checkbox" id="Water" name="drink" value="Water">
+            <label for="Water">Water</label><br>
+            <input type="checkbox" id="Fresh Orange" name="drink" value="Fresh Orange">
+            <label for="Fresh Orange">Fresh Orange</label>
+        </fieldset>
+        <br>
+    
+        <fieldset style="color: yellow;">
+            <label for="delivery">Delivery or collection?</label>
+            <input list="delorpick" name="delivery method" id="delivery">
+            <datalist id="delorpick">
+                <option value="Delivery"></option>
+                <option value="Collection"></option>
+            </datalist><br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2579.527677284067!2d-2.2284929338129653!3d53.45943664198223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1679846311223!5m2!1sen!2suk" 
+                    width="300" height="50" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </fieldset>
+    
+        <fieldset style="font-size: x-large; color: yellow;">
+            <legend>Payment</legend>
+    
+            <label for="first">First Name</label>
+            <input style="margin-left: 70px;" type="text" id="first" name="first" placeholder="Enter First Name" minlength="2" maxlength="50" required><br>
+            <label for="Second">Surname</label>
+            <input style="margin-left: 90px;" type="text" id="Second" name="Second" placeholder="Enter Surname" minlength="2" maxlength="50" required><br>
+            <label for="email">email</label>
+            <input style="margin-left: 122px;" type="email" id="email" name="email" placeholder="Enter email" minlength="4" maxlength="50" required><br>
+            <label for="phone">Phone number</label>
+            <input style="margin-left: 35px;" type="number" id="phone" name="phone" placeholder="Enter Phone Number" minlength="11" maxlength="11" required><br>
+            <label for="card num">Card Number</label>
+            <input style="margin-left: 42px;" type="number" id="number" name="number" placeholder="Enter Card Number" minlength="16" maxlength="16" required><br>
+            <label for="cvc">CVC</label>
+            <input style="margin-left: 124px;" type="number" id="cvc" name="cvc" placeholder="Enter last 3 digits" minlength="3" maxlength="3" required> 
+        </fieldset>
+        <br>
+    
+    <input style="font-size: x-large; background-color: green;" type="Submit" id="Submit" value="Confirm Order">
+    <br><br>
+    <input style="font-size: x-large; background-color: red;" type="Reset" value="Reset">
+    
+    </fieldset>
+</form>
+    
+</body>
+</html>
