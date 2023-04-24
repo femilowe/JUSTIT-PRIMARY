@@ -16,11 +16,15 @@ body {background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 255, 255))
 
 /*header backround image + font + border
 */
-header {  
-    position: sticky;
+#navigation {  
+    position: relative;
     background-color: red;
     height: 170px;
     z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     }
 
    
@@ -41,13 +45,7 @@ h1 {font-family: 'Pacifico', cursive;
     }
 
 h1{text-shadow: 5px 5px 5px black;}
-/*
-h1:hover{color: white;
-animation-name: #;
-animation-duration: 5s;
-animation-iteration-count: 1;
-animation-timing-function: ease-out;}
-*/
+
 
 i{
     font-size: 25px;
@@ -151,7 +149,7 @@ section{display: inline-block;
         
 
 #section-2{display: block;
-    ;
+    
     }
 
     .p1{
@@ -409,6 +407,8 @@ h3 {
         from{background-color: red;} to {background-color: white;}
     }
 
+
+    /*
     @keyframes breath{
         33%    {font-size: 60px;
             color: white;
@@ -422,6 +422,15 @@ h3 {
                 color: red;
             transition: font-size 1s, color 1s;}
         }
+
+    
+    h1:hover{color: white;
+    animation-name: breath;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;}
+    */
+        
 
     @keyframes to-table{
         from {background-image: url(/StrawberryPage/Images/strawberry-4430106_1920.jpg);}
