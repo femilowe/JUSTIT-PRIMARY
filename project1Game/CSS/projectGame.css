@@ -1,0 +1,361 @@
+/*
+font-family: 'IBM Plex Mono', monospace;          --paragraph
+font-family: 'Orbitron', sans-serif;              --headers
+font-family: 'Press Start 2P', cursive;           --h1
+*/
+
+
+body{
+    
+    background-image: url(/project1Game/Images/space-3262811_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.hr {
+    grid-area: header;
+}
+
+.s1{
+    grid-area: section-1;
+}
+
+.s2{
+    grid-area: game;
+    text-align: center;
+   
+}
+
+.s3{
+    grid-area: section-3;
+  
+}
+
+.s4{
+    grid-area: content;
+}
+
+.fr{
+    grid-area: footer;
+
+}
+
+#grid {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'section-1 game section-3'
+    '. content .'
+    'footer footer footer';
+
+    gap: 1% 1%;
+
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 50% 45% 5%;
+
+   
+
+
+}
+
+
+
+
+
+
+/* header */
+
+.hr{
+    display: inline;
+    
+}
+
+#hrimg{
+    height: 100px;
+}
+
+#hrimg:hover{
+    transform: rotate(3600deg);
+    transition: 5s;
+    cursor: pointer;
+}
+
+h1{
+    display: inline;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 65px;
+    margin-left: 27%;
+    box-shadow: 10px 10px 10px white inset;
+    
+    }
+
+h1:hover{
+    animation-name: h1phase;
+    animation-duration: 4s;
+}
+
+nav{
+    display: inline;
+    margin-left: 3%;
+      
+}   
+
+a{  
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+}
+
+a:hover{
+    color: white;
+}
+
+#gameanc{
+    visibility: collapse;
+}
+
+/* modal section/ section 1*/
+
+.modal{
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    left: 1;
+    top: 0;
+    z-index: 1;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-top: 5%;
+    
+
+}
+
+.instruct{
+    background-color: rgb(255, 255, 255);
+    margin: 15% auto;
+    padding: 20px;
+    border: 5px solid grey;
+    width: 80%;
+}
+
+.close{
+    color: rgba(0, 0, 0, 0.382);
+    float: right;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.close:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#btn1{
+    background-color: rgba(255, 255, 255, 0.438);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    margin-left: 30%;
+    margin-top: 50%;
+    border: 10px dashed yellow;
+    visibility: hidden;
+}
+
+#btn1:hover{
+    font-size: 35px;
+    border: 10px dashed green;
+    cursor: pointer;
+}
+
+
+
+
+
+/*game section/ section 2*/
+
+#question1{
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#age{
+    color: black;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.873);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    border: 10px dashed yellow;
+    cursor: pointer;
+
+
+}
+#btn{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    display: block;
+    margin-left: 36%;
+}
+
+#btn:hover{
+    font-size: 20px;
+    border: 5px dashed green;
+    cursor: pointer;
+}
+
+#game{
+    border: 20px groove rgba(173, 216, 230, 0.39);
+    visibility: hidden;
+}
+
+
+/*name section/ section 3*/
+
+#message{
+    visibility: hidden;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.452);
+    margin-left: 75%;
+}
+
+#question{
+    margin-top: 50%;
+    font-size: 25px;
+    font-family: 'Orbitron', sans-serif;
+    visibility: hidden;
+    
+    
+}
+
+#name{
+    color: black;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 0%;
+    background-color: rgba(255, 255, 255, 0.873);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    border: 10px dashed yellow;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#btn2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    visibility: hidden;
+    
+
+}
+
+#btn2:hover{
+    font-size: 20px;
+    border: 5px dashed green;
+    cursor: pointer;
+}
+
+#nameoutput{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 5px 5px 5px grey;
+    margin: 0% 0%;
+   
+
+}
+
+
+/*content section*/
+
+#h3{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 5px 5px 10px grey;
+    margin-bottom: 0px;
+    visibility: hidden;
+
+}
+
+    
+
+
+#cont{
+    display:flex;
+    justify-content: space-evenly;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    visibility: hidden;
+    
+
+}
+
+h4{
+    text-align: center;
+}
+
+
+/*footer section */
+footer{
+    margin-top: 0%;
+}
+
+
+
+/*keyframe animation  */
+
+@keyframes h1phase{
+    from {color: rgba(255, 255, 255, 0) ;} to {color: black;}
+}
+
+
+/*page 2 body */
+
+#page2{
+    background-image: url(/project1Game/Images/helmet-310867_1280.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*page 2 header */
+.hr2{
+    background-color: white;
+}
+
+#home:hover{
+    color: grey;
+
+}
+#create2:hover{
+    color: grey;
+
+}
+/*page 2 content  */
+
+#title2{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+
+}
+
+#p2{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 11% 0% 0% 34%
+}
+
+/*page 2 footer */
+
+#footer2{
+    background-color: white;
+}

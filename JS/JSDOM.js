@@ -109,3 +109,6 @@ function test(){
         para.style.visibility = "visible";
     }
 }
+
+
+// see Teams files for addEventListener examples

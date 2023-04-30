@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Orbitron&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/project1Game/CSS/projectGame.css">
+    <title>StarMan</title>
+
+</head>
+<body id="grid">
+
+    <header class="hr">
+        <img src="/project1Game/Images/helmet-310867_1280.png" alt="astronaut helmet" id="hrimg">
+        <h1>StarMan</h1>
+        <nav>
+            <a href="/project1Game/projectGameAbout.html">About</a>
+            <a href="#game" id="gameanc">Game</a>
+            <a href="https://scratch.mit.edu/" target="_blank" id="create" onmouseenter="getmessage()" onmouseleave="endmessage()">Create</a>
+        </nav>
+        <p id="message">Opens SCRATCH in a new window!</p>       
+    </header>
+
+    <div class="s1">
+        <button id="btn1" onclick="modalon()">How To Play</button>
+        <div class="modal" id="instr">
+            <div class="instruct">
+                <span class="close" onclick="modaloff()">&times;</span>
+                <h2>How To Play</h2>
+                <p>Click on the game screen to choose the game <br>
+                    then press the spacebar to start. <br>
+                    <br>
+                    You play as the StarMan. <br><br>
+                    Using the keyboard...
+                    press the LEFT, RIGHT and UP arrow keys to move. <br><br>
+                    Collect STARS and DIAMONDS for points. <br><br>
+                    Last until the TIMER runs out for more points. <br><br>
+                    Watch out for the ROBOT, if it gets you its GAMEOVER!
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="s2">
+        <div>
+            <h2 id="question1">How old are you?</h2> 
+            <input type="number" id="age" name="age" placeholder="Type your age" minlength="1" maxlength="3">
+            <button id="btn" onclick="getage()">Submit</button>
+        </div>
+        <iframe src="https://scratch.mit.edu/projects/798256153/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen title="StarMan game" id="game"></iframe> 
+         
+                
+    </div>
+
+    <div class="s3">
+        
+        
+        <h2 id="question">What's your name?</h2>
+        <input type="text" id="name" name="name" placeholder="Type your name" minlength="1" maxlength="40">
+        <button id="btn2" onclick="getvalue()">Submit</button>
+        <p id="nameoutput"></p>
+        
+        
+ 
+
+    </div>
+
+    <div class="s4">
+        <h3 id="h3">How to earn points.</h3>
+        <section id="cont">
+            <div>
+                <h4>DIAMONDS</h4>
+                <p>Catch a diamond to get <br> 10 points!!</p>
+            </div>
+            <div>
+                <H4>STARS</H4>
+                <ul>
+                    <li>Lower = 1 point!</li>
+                    <li>Middle = 2 points!</li>
+                    <li>Highest = 5 points!!</li>
+                </ul>
+            </div>
+            <div>
+                <h4>TIME</h4>
+                <p>
+                    Last until the 2 minute <br> timer runs out for <br>50 points!!!
+                </p>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <footer class="fr" id="foot">
+        <div>
+            <h5>copyright olowe 2023</h5>
+        </div>
+                
+    </footer>
+        
+    
+    
+
+
+    <script src="/project1Game/JS/projectGame.js"></script>
+</body>
+</html>
