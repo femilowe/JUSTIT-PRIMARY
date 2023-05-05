@@ -21,7 +21,7 @@
             <a href="#game" id="gameanc">Game</a>
             <a href="https://scratch.mit.edu/" target="_blank" id="create" onmouseenter="getmessage()" onmouseleave="endmessage()">Create</a>
         </nav>
-        <p id="message">Opens SCRATCH in a new window!</p>       
+        <p id="message">Opens SCRATCH in a <em>new window!</em></p>       
     </header>
 
     <div class="s1">
@@ -30,43 +30,36 @@
             <div class="instruct">
                 <span class="close" onclick="modaloff()">&times;</span>
                 <h2>How To Play</h2>
-                <p>Click on the game screen to choose the game <br>
-                    then press the spacebar to start. <br>
+                <p>Click on the green flag to ready the game. <br>
+                    Press the spacebar to start. <br>
                     <br>
                     You play as the StarMan. <br><br>
-                    Using the keyboard...
-                    press the LEFT, RIGHT and UP arrow keys to move. <br><br>
+                    Using the keyboard, press the: <br> 
+                    LEFT &#9664; <br> RIGHT &#9654; <br> and UP &#128316; <br> arrow keys to move. <br><br>
                     Collect STARS and DIAMONDS for points. <br><br>
                     Last until the TIMER runs out for more points. <br><br>
                     Watch out for the ROBOT, if it gets you its GAMEOVER!
                 </p>
             </div>
         </div>
-
     </div>
 
     <div class="s2">
-        <div>
+        <div>    
+            <p id="ageres1"></p>
             <h2 id="question1">How old are you?</h2> 
             <input type="number" id="age" name="age" placeholder="Type your age" minlength="1" maxlength="3">
             <button id="btn" onclick="getage()">Submit</button>
+            <button id="btnb" onclick="ok()">OK</button>
         </div>
-        <iframe src="https://scratch.mit.edu/projects/798256153/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen title="StarMan game" id="game"></iframe> 
-         
-                
+        <iframe src="https://scratch.mit.edu/projects/798256153/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen title="StarMan game" id="game"></iframe>           
     </div>
 
-    <div class="s3">
-        
-        
+    <div class="s3">   
         <h2 id="question">What's your name?</h2>
         <input type="text" id="name" name="name" placeholder="Type your name" minlength="1" maxlength="40">
         <button id="btn2" onclick="getvalue()">Submit</button>
-        <p id="nameoutput"></p>
-        
-        
- 
-
+        <p id="nameoutput"></p>   
     </div>
 
     <div class="s4">
@@ -92,8 +85,6 @@
             </div>
         </section>
 
-
-
     </div>
 
     <footer class="fr" id="foot">
@@ -103,10 +94,6 @@
                 
     </footer>
         
-    
-    
-
-
     <script src="/project1Game/JS/projectGame.js"></script>
 </body>
 </html>
