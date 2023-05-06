@@ -54,15 +54,7 @@ body{
 
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: 10% 50% 45% 5%;
-
-   
-
-
 }
-
-
-
-
 
 
 /* header */
@@ -160,20 +152,15 @@ a:hover{
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
     margin-left: 30%;
-    margin-top: 50%;
+    margin-top: 95%;
     border: 10px dashed yellow;
     visibility: hidden;
 }
 
 #btn1:hover{
-    font-size: 35px;
     border: 10px dashed green;
     cursor: pointer;
 }
-
-
-
-
 
 /*game section/ section 2*/
 
@@ -181,6 +168,12 @@ a:hover{
     font-size: 25px;
     font-family: 'Orbitron', sans-serif;
 
+}
+
+#ageres1{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #age{
@@ -191,26 +184,44 @@ a:hover{
     background-color: rgba(255, 255, 255, 0.873);
     font-family: 'Orbitron', sans-serif;
     font-size: 15px;
-    border: 10px dashed yellow;
+    border: 5px dashed yellow;
     cursor: pointer;
-
-
 }
+
+#age:hover{
+    border: 5px dashed green;
+}
+
+
 #btn{
     font-family: 'Orbitron', sans-serif;
     font-size: 15px;
     display: block;
-    margin-left: 36%;
+    margin-left: 37%;
+    cursor: pointer;
 }
 
 #btn:hover{
-    font-size: 20px;
     border: 5px dashed green;
     cursor: pointer;
 }
 
+#btnb{
+    background-color: rgba(255, 255, 255, 0.438);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    border: 10px dashed yellow;
+    cursor: pointer;
+    visibility: collapse;
+}
+
+#btnb:hover{
+    border: 10px dashed green;
+}
+
 #game{
     border: 20px groove rgba(173, 216, 230, 0.39);
+    cursor: pointer;
     visibility: hidden;
 }
 
@@ -227,7 +238,7 @@ a:hover{
 }
 
 #question{
-    margin-top: 50%;
+    margin-top: 95%;
     font-size: 25px;
     font-family: 'Orbitron', sans-serif;
     visibility: hidden;
@@ -243,9 +254,13 @@ a:hover{
     background-color: rgba(255, 255, 255, 0.873);
     font-family: 'Orbitron', sans-serif;
     font-size: 15px;
-    border: 10px dashed yellow;
+    border: 5px dashed yellow;
     cursor: pointer;
     visibility: hidden;
+}
+
+#name:hover{
+    border: 5px dashed green;
 }
 
 #btn2{
@@ -264,10 +279,14 @@ a:hover{
 
 #nameoutput{
     font-family: 'Orbitron', sans-serif;
+    background-color: rgba(255, 255, 255, 0.412);;
+    color: rgb(35, 34, 34);
     font-size: 50px;
     font-weight: 600;
     text-shadow: 5px 5px 5px grey;
-    margin: 0% 0%;
+    border: 5px solid grey;
+    margin: 0% 5% 0% 0%;
+    visibility: hidden;
    
 
 }
@@ -282,6 +301,7 @@ a:hover{
     text-shadow: 5px 5px 10px grey;
     margin-bottom: 0px;
     visibility: hidden;
+    margin-top: 10%;
 
 }
 
@@ -310,11 +330,8 @@ footer{
 
 
 
-/*keyframe animation  */
+/*PAGE 2 --------------------*/
 
-@keyframes h1phase{
-    from {color: rgba(255, 255, 255, 0) ;} to {color: black;}
-}
 
 
 /*page 2 body */
@@ -330,8 +347,17 @@ footer{
     background-color: white;
 }
 
+#h1-2{
+    margin-left: 21%;
+}
+
+#home{
+    margin-left: 9%;
+}
+
 #home:hover{
     color: grey;
+    
 
 }
 #create2:hover{
@@ -358,4 +384,12 @@ footer{
 
 #footer2{
     background-color: white;
+}
+
+
+
+/*keyframe animation ------------- */
+
+@keyframes h1phase{
+    from {color: rgba(255, 255, 255, 0) ;} to {color: black;}
 }
